@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  hall_number: 1
+  capacity: 1
+  block_name: MyString
+  date_of_opening: 2013-11-26
+
+two:
+  hall_number: 1
+  capacity: 1
+  block_name: MyString
+  date_of_opening: 2013-11-26

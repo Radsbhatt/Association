@@ -1,0 +1,45 @@
+<% if params[:controller] == 'residential_halls' %>
+  <% @students = student %>
+<% end  %>
+<h1>Listing students</h1>
+
+<table>
+  <tr>
+    <th>M number</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Age</th>
+    <th>Sex</th>
+    <th>Date Of Birth</th>
+    <th>Registration date</th>
+    <th>Period of stay(In months)</th>
+    <th>Contact number</th>
+    <th>Residential Hall number</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%= student.m_number %></td>
+    <td><%= student.name %></td>
+    <td><%= student.address %></td>
+    <td><%= student.age %></td>
+    <td><%= student.sex %></td>
+    <td><%= student.date_of_birth %></td>
+    <td><%= student.registration_date %></td>
+    <td><%= student.period_of_stay %></td>
+    <td><%= student.contact_number %></td>
+    <td><%= student.hall_number %></td>
+    <td><%= link_to 'Show', student %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student', new_student_path %>
+<%= link_to 'View Residential Halls List', residential_halls_path%>

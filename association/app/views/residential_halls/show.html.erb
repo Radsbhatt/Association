@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Hall number:</b>
+  <%= residential_hall.hall_number %>
+</p>
+
+<p>
+  <b>Capacity:</b>
+  <%= residential_hall.capacity %>
+</p>
+
+<p>
+  <b>Block name:</b>
+  <%= residential_hall.block_name %>
+</p>
+
+<p>
+  <b>Date of opening:</b>
+  <%= residential_hall.date_of_opening %>
+</p>
+
+
+<%= link_to 'Edit', edit_residential_hall_path(residential_hall) %> |
+<%= link_to 'Back', residential_halls_path %>

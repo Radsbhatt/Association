@@ -1,0 +1,31 @@
+<h1>Residential Halls</h1>
+
+<table>
+  <tr>
+    <th>Hall number</th>
+    <th>Capacity</th>
+    <th>Block name</th>
+    <th>Date of opening</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @residential_halls.each do |residential_hall| %>
+  <tr>
+    <td><%= residential_hall.hall_number %></td>
+    <td><%= residential_hall.capacity %></td>
+    <td><%= residential_hall.block_name %></td>
+    <td><%= residential_hall.date_of_opening %></td>
+    <td><%= link_to 'Show', residential_hall %></td>
+    <td><%= link_to 'Edit', edit_residential_hall_path(residential_hall) %></td>
+    <td><%= link_to 'Destroy', residential_hall, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Residential hall', new_residential_hall_path %>
+<%= link_to 'View List of all students', students_path %>
+

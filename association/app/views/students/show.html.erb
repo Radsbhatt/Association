@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>M number:</b>
+  <%= @student.m_number %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @student.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @student.address %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @student.age %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%= @student.sex %>
+</p>
+
+<p>
+  <b>Date Of Birth:</b>
+  <%= @student.date_of_birth   %>
+</p>
+
+<p>
+  <b>Registration date:</b>
+  <%= @student.registration_date %>
+</p>
+
+<p>
+  <b>Period of stay:</b>
+  <%= @student.period_of_stay %>
+</p>
+
+<p>
+  <b>Contact number:</b>
+  <%= @student.contact_number %>
+</p>
+
+<p>
+  <b>Residential Hall number:</b>
+  <%= @student.hall_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

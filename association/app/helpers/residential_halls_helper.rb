@@ -1,0 +1,2 @@
+module ResidentialHallsHelper
+end
