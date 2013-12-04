@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :date_of_birth %><br />
-    <%= f.date_select :date_of_birth %>
+    <%= f.date_select :date_of_birth, end_year: DateTime.now.year - 50 %>
   </div>
   <div class="field">
     <%= f.label :registration_date %><br />

@@ -41,7 +41,7 @@ class StudentsController < ApplicationController
   # POST /students.json
   def create
     residential_hall = ResidentialHall.find_by_hall_number(params[:student][:hall_number])
-    #@student = residential_hall.students.build(params[:student])
+    @student = residential_hall.students.build(params[:student])
 
     respond_to do |format|
       if @student.save

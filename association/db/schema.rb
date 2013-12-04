@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20131126075526) do
   end
 
   create_table "students", :force => true do |t|
-    t.integer  "m_number",                         :null => false
+    t.string   "m_number",                         :null => false
     t.string   "name",                             :null => false
     t.string   "address",                          :null => false
     t.integer  "age",                              :null => false

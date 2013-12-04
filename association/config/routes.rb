@@ -2,6 +2,7 @@ Association::Application.routes.draw do
   resources :residential_halls
 
   resources :students
+  match '/about' => 'students#about'
 
 
   # The priority is based upon order of creation:

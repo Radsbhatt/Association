@@ -14,11 +14,8 @@ class ResidentialHallsController < ApplicationController
   # GET /residential_halls/1.json
   def show
     @residential_hall = ResidentialHall.find(params[:id])
-    #render action: 'index', controller: 'students', :locals => { student: @residential_hall.students }
     respond_to do |format|
-      debugger
       format.html {render "students/index", :locals => { student: @residential_hall.students }}# show.html.erb
-      #format.json { render json: @residential_hall }
     end
   end
 
